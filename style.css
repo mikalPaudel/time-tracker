@@ -40,9 +40,10 @@ body{
     margin: 48px;
     display: flex;
 }
-.sidebar{
+.left{
     background-color: var(--Dark-blue);
     border-radius: 10px;
+    height: fit-content;
 }
 
 
@@ -111,6 +112,10 @@ button.active {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 28px;
 }
+.card-item:hover{
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
 
 .card-item{
     background-color: #fff;
@@ -124,10 +129,6 @@ button.active {
 .card-item .nav{
     display: flex;
     justify-content: space-between;
-}
-.card-item .nav span:nth-child(2){
-    margin-top: 0px;
-    font-weight: bolder;
 }
 
 .card-item .current{
@@ -202,7 +203,7 @@ button {
     .container{
         flex-direction: column;
     }
-    .sidebar{
+    .left{
         margin-bottom: 24px;
     }
 
@@ -233,7 +234,7 @@ button {
         margin-left: 0;
     }
 
-    .part {
+    .time {
         display: flex;
     }
 
